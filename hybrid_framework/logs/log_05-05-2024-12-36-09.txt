@@ -1,0 +1,3 @@
+2024-05-05 12:36:14,603::INFO-->launched browser for test_case_verify_title_01
+2024-05-05 12:36:14,603::INFO-->verify title for test_case_verify_title_01
+2024-05-05 12:36:14,616::INFO-->title matched.. test_case_verify_title_01 is passed

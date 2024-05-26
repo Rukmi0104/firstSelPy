@@ -1,0 +1,17 @@
+ polymorphism
+
+ method1(22)         # why comma in output (22,) ??
+
+
+ encapsulation-> similar to private method, is there any way to call private variable outside the class?
+
+ why below block is not working
+ # read file and save in a list
+with open("text5.txt", 'w') as fr:
+    fr.write("heelo")
+    line_list = fr.readlines()
+
+
+
+
+    for user induced error do we use ImportError always and then define error message?

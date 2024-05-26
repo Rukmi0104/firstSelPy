@@ -1,0 +1,99 @@
+'''
+pytest concept
+test se. tup and tear down
+test setup - if we want to do some precondition before running our test cases. this will run before running each test case.
+Example.. launching browser
+tear down - after executing each test case, test case with tear down will run.
+driver.close(), driver.quit() etc
+
+suite setup - suite is a collection of test cases. Suite setup will run before running each test suite.
+suite tear down - suite tear down will run after running each test suite
+
+for pytest we have to use terminal for execution
+'''
+
+# examples
+
+# install pytest
+
+######################
+# command to execute test suite
+pytest -v -s Test_TS1.py
+
+# command to execute any one test case from test suite --> pytest -v-s Test_suites.py::test_case_name
+Ex... pytest -v -s Test_TS1.py::test_03
+
+# run 2 modules at a time
+pytest -v -s Test_TS1.py Test_TS2.py
+
+# execute with substring
+pytest -v -s Test_markers_grouping.py -k "substring"
+        - here substring is a string matching in test case name or test suite name..
+        - If string present in test case ir test suite, it will be executed.
+
+# execute with markers
+pytest -v -s -m "sanity" -k "Test" Test_markers_grouping.py
+
+# sample example of running py file in pytest framework is as below
+pytest -v -s -k "substring" -m "marker name" ".py test suite file"
+
+
+# example of running py file in pytest framework is as below
+pytest -v -s -k "substring" -m "marker name" ".py test suite file"
+
+# executing single test case
+pytest -v -s Test_use_yield_True.py::Test_TS_use_yield::test_01
+
+# execute test case in parallel -- install package xdist to run test cases in parallel and in cmd provide -n = "no. of test cases to be run in parallel"
+pytest -v -s Test_parameterization.py -n=2
+            --> with above -n=2 first 2 test cases will run in parallel,
+            then pick next set of 2 test cases and execute and so on.. until all test cases completes. So, it will reduce execution time.
+            --> if test cases are interdependent the we can not execute test case in parallel,
+            because we can not set execution order of test cases
+            --> it is recommend to write all independent test case to run tc in parallel
+
+# get log in html        --> install package pytest-html
+pytest -v -s Test_parameterization.py -n=2 --html=./logs.html
+
+# go back to previous folder "reports" and save logs
+pytest -v -s -n=2 Test_login.py --html="..\reports\report.html" --browser="chrome"
+
+log file in xml is not required
+
+# to capture detail information in html file.
+pytest -v -s Test_parameterization.py -n=2 --html=./logs.html --capture=tee-sys
+
+
+######################
+
+difference between yield and return
+return -> once we write a return statement, any script after return statement will not work.
+yield -> scripts written after yield statement will be executed
+
+yield stores the current status of the test case..
+once setup is executed yield takes control and pass it to test cases,
+once test cases are executed yield takes control back to the fixture and execute remaining statements.
+
+with yield we can execute some test cases like driver.close(), driver.quit() etc
+
+class level or module level setup can be given in any one method, i will work.
+for test case level setup, we will have to give setup in all test case.
+
+# to have a common fixtures for all module, we can create conftest file and store fixtures there.
+
+################ to avoid pytest marker warning
+PytestUnknownMarkWarning: Unknown pytest.mark.regression
+we can configure these markers in conftest.py file
+
+#### parameterization
+parameterization is used to take different input for single variable.
+we can perform data driven testing using parameterization
+if we have single parameter then we can pass values in list
+
+if we have more than 1 parameter, then pass all parameters in "" and values in tuple inside list
+
+# hybrid driven framework is implemented using data driven and keyword driven concept
+
+
+
+

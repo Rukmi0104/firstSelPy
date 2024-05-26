@@ -1,0 +1,37 @@
+2024-05-05 09:32:27,506::INFO-->launched browser for test_case_verify_title_01
+2024-05-05 09:32:27,507::INFO-->verify title for test_case_verify_title_01
+2024-05-05 09:32:27,514::INFO-->title matched.. test_case_verify_title_01 is passed
+2024-05-05 09:32:37,408::INFO-->launched browser for test_case_do_login_verify_title_02
+2024-05-05 09:32:37,410::INFO-->initiating login_page class
+2024-05-05 09:32:37,411::INFO-->set email id
+2024-05-05 09:32:37,752::INFO-->set password
+2024-05-05 09:32:37,972::INFO-->click login
+2024-05-05 09:32:39,291::INFO-->logged in to NOP commerce successfully
+2024-05-05 09:32:42,309::INFO-->title matched.. test_case_do_login_verify_title_02 is passed
+2024-05-05 09:35:00,151::INFO-->launched browser for test_case_verify_title_01
+2024-05-05 09:35:00,151::INFO-->verify title for test_case_verify_title_01
+2024-05-05 09:35:00,159::INFO-->title matched.. test_case_verify_title_01 is passed
+2024-05-05 09:35:10,226::INFO-->launched browser for test_case_do_login_verify_title_02
+2024-05-05 09:35:10,226::INFO-->initiating login_page class
+2024-05-05 09:35:10,226::INFO-->set email id
+2024-05-05 09:35:10,451::INFO-->set password
+2024-05-05 09:35:10,563::INFO-->click login
+2024-05-05 09:35:11,794::INFO-->logged in to NOP commerce successfully
+2024-05-05 09:35:14,813::INFO-->title matched.. test_case_do_login_verify_title_02 is passed
+2024-05-05 09:45:43,840::INFO-->launched browser for test_case_verify_title_01
+2024-05-05 09:45:43,846::INFO-->verify title for test_case_verify_title_01
+2024-05-05 09:45:43,873::INFO-->title matched.. test_case_verify_title_01 is passed
+2024-05-05 09:45:53,888::INFO-->launched browser for test_case_do_login_verify_title_02
+2024-05-05 09:45:53,888::INFO-->initiating login_page class
+2024-05-05 09:45:53,888::INFO-->set email id
+2024-05-05 09:45:54,319::INFO-->set password
+2024-05-05 09:45:54,435::INFO-->click login
+2024-05-05 09:45:55,972::INFO-->logged in to NOP commerce successfully
+2024-05-05 09:45:58,998::INFO-->title matched.. test_case_do_login_verify_title_02 is passed
+2024-05-18 16:03:53,180::INFO-->login to NOP site is successful, test_case_do_login_verify_title_02_ddt is passed
+2024-05-18 16:04:00,866::INFO-->login to NOP site is not successful, test_case_do_login_verify_title_02_ddt is passed
+2024-05-18 16:04:08,179::INFO-->login to NOP site is not successful, test_case_do_login_verify_title_02_ddt is passed
+2024-05-18 16:04:15,984::INFO-->login to NOP site is not successful, test_case_do_login_verify_title_02_ddt is passed
+2024-05-24 22:32:30,664::INFO-->customer added successfully
+2024-05-24 22:33:45,143::INFO-->customer added successfully
+2024-05-24 22:34:45,066::INFO-->customer added successfully

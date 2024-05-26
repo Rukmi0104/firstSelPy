@@ -1,0 +1,8 @@
+page object consist of action items.. ex. element locating
+
+it is a framework, there are set of rules which we have to use
+
+# ideal number to execute parallel test is 3
+
+# in pytest if we have to print log on console and in text file then additionally we have to use force=True in basicCongif()
+

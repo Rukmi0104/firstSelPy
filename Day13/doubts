@@ -1,0 +1,24 @@
+
+keyboard_actions
+written for loop.
+Can we use n numbers here so that if list is longer then also it will work
+
+
+
+webtable_1_practice_hcode.py
+# option 2 get total number of cells in table using * operator is this correct one?
+
+
+# break statement can be applied for only while and for loop?? with if statement break will not work?
+
+Why changing for and if loop conditions doesnt work
+
+# # how i can get below data in tabular format
+#
+for row_price in range(1, row_len+1):
+    row_price_data = driver.find_element(By.XPATH, f"//table[@class= 'dataTable']/tbody/tr[{row_price}]/td[4]").text.replace(",", "")
+    if float(row_price_data) <= 2:
+        for coll in range(1, col_len+1):
+            stocks_data = driver.find_element(By.XPATH, f"//table[@class= 'dataTable']/tbody/tr[{row_price}]/td[{coll}]").text
+            print(stocks_data)
+        break

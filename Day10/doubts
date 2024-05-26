@@ -1,0 +1,24 @@
+wait commands
+#IF TIME.SLEEP OF 3 SEC IS WORKING THEN IMPLICIT WAIT of 10 sec SHOULD ALSO WORK ?
+
+WebDriverWait also sometimes work and sometime not
+
+handling checkboxes
+even if i am providing webdriver wait for both clicks before and after, there is a need to provide hard sleep of 3 sec
+
+
+drop and check
+want to print product name only when if condition is full-filled, how we can achieve it?
+
+
+switch_to_alert
+1. with send_keys text is getting entered but its not visible in text box
+2. once we move alert using switch_to.alert, we can perform accept or dismiss operations multiple times by clicking on alert without using switch to alert functionality second time
+3. in prompt alert, how can i check if entered text is correct?
+
+
+switch_to_alert_auth
+i am not able to get title of the page after login is successful.
+
+handling_windows_2.py
+if i want to have complete focus on first window and want to perform few operations and then switch to net window?

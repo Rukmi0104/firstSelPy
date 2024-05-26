@@ -1,0 +1,66 @@
+Automation consist of 3 layers
+It is 3 tier architecture
+    1. Presentation layer (web server)/ presentation tier / user interface and communication layer / internet--> client -> built on react, angular, VUE etc.
+    2. Application / server/ logic tier / go between for presentation and data tier -> Spring boot, Django, Expresso
+    3. database / data tier/  - Store and manages data  -> Ex. MySQL, mongo DB etc
+
+# python selenium works on the fist layer.
+
+# use of test frame is we can create n number of test cases and execute all at once in required sequence
+# if we dont use the test framework then we will have to run test cases manually in sequence.
+# also we will have to copy the same code again and again to run another test case
+
+In proper created test framework,
+we have many python file and all these files are stored in package or libraries which is called POM.
+
+############ types of Framework #################
+1. Modular based framework
+in this different functions (ex. login, customer detail, logout) for different functionalities are created and
+all these functions wll be called in single file. Ex. main
+
+2. Data Driven Framework ->
+In data driven framework we create different combination of data to check the possible scenarios in a proper format say example in excel file
+and use that data during execdution.
+Ex. username and password combinations
+
+3. Keyword driven Framework
+
+
+4. Hybrid framework
+
+# pytest test framework
+# 4 pytest fixture
+
+test setup ->setup will run before every test case execution
+test tear down ->tear down will run after every test case execution
+
+suite setup ->suite setup will run before every suite execution
+suite tear down ->suite tear down will run after every suite execution
+
+# to start working with pytest, we have to install 'pytest' and import in a .py file
+# create test suite or class file with extension '.py'
+# open python terminal
+# initially terminal will be in powershell, we have to type 'cmd' and press 'ENTER' from keyboard
+# now, navigate to '.py' file using cd command for running the test case or test suite
+# usually in pytest class act as test suite and methods act as test case
+# class name should always start with keyword 'Test' and method name should always start with keyword 'test'
+
+# example of running py file in pytest framework is as below
+pytest -v -s -k "substring" -m "marker name" ".py test suite file"
+
+pytest -v -s Test_use_yield_True.py::Test_TS_use_yield::test_01
+
+in above command
+-v -> is for getting detailed information
+-s is for getting print statement
+-k is for giving substring   --> substring is any text/ partial text in .py file, class(test suite)or methods (test case)
+    if given substring matches in respective places then those test case will be executed
+-m is for giving markers --> markers are used for grouping of test cases. ex @pytest.mark.sanity.
+    here, sanity is a group where all test cases which should be run during sanity ca n be included
+    marker names are user defined.
+
+
+# in normal scenario, we wont create test case using function, we will create using class methods
+
+
+

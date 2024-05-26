@@ -1,0 +1,7 @@
+2024-05-05 16:19:29,469::INFO-->launched browser for test_case_verify_title_01
+2024-05-05 16:19:29,470::INFO-->verify title for test_case_verify_title_01
+2024-05-05 16:19:29,477::INFO-->title matched.. test_case_verify_title_01 is passed
+
+2024-05-05 16:18:44,514::INFO-->click login
+2024-05-05 16:18:51,474::INFO-->logged in to NOP commerce successfully
+2024-05-05 16:18:54,490::INFO-->title matched.. test_case_do_login_verify_title_02 is passed
